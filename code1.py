@@ -8,8 +8,8 @@ f_damp.close()  # закрываем файл с дампом
 
 con.executescript(damp)  # запускаем запросы
 con.commit()  # сохраняем информацию в базе данны
-cursor = con.cursor()  # создаем курсор
 
+cursor = con.cursor()  # создаем курсор
 # выбираем и выводим записи из таблиц author, reader
 cursor.execute("SELECT * FROM author")
 print(cursor.fetchall())
